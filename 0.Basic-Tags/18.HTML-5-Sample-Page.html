@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML 5 Page</title>
+</head>
+
+<body>
+    <div id="wrapper">
+        <header>
+            <h1>Blog <i>Computer Science</i></h1>
+            <h2>Playgrounds :</h2>
+            <nav>
+                <ul>
+                    <li><a href="https://github.com/TeukuRizky21">Github</a></li>
+                    <li><a href="#">Medium</a></li>
+                    <li><a href="#">Tumblr</a></li>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="https://www.instagram.com/teukurizky_21/">Instagram</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <article>
+                <h1>Mengenal props pada React</h1>
+                <header>
+                    <p>
+                        <b>TrxMod21X</b><br>
+                        <i>Just an ordinary person</i>
+                    </p>
+                </header>
+                <aside>
+                    <h2>About TrxMod21X</h2>
+                    <dl>
+                        <dt>Occupation</dt>
+                        <dd>Fullstack Developer</dd>
+                        <dt>Education</dt>
+                        <dd>Arkademy Tech</dd>
+                    </dl>
+                    <p>TrxMod21X joined for make the forum called Aceh InfoTech.</p>
+                    <p>Forum engaged in the field of Cyber Security, Programming, IOT, and Design which aims to
+                        introduce more about industry 4.0 for the people of Aceh</p>
+                </aside>
+                <p>Saat kita mau bikin sebuah aplikasi dengan memakai library React, kita akan ketemu dengan sebuah
+                    “props” singkatan dari properties. Pada react, props ini digunakan untuk komunikasi antara Parent
+                    component dengan Child component. Sebagai contoh , kita memiliki 3 file dalam satu folder kita beri
+                    nama tiap filenya index.js, Buah.js, Tanaman.js, berikut kodingannya :</p><br>
+                <img src="https://miro.medium.com/max/533/1*FdfzIHYphsLJoGym5ZpW9g.jpeg" alt="images">
+                <p>pada file index.js</p><br>
+                <img src="https://miro.medium.com/max/363/1*HqHYMbw-THEYmxuAqHEfdQ.png" alt="images">
+                <p>Pada file Tanaman.js</p><br>
+                <img src="https://miro.medium.com/max/435/1*BJikBNq3XARKKsrp54E-9g.png" alt="images">
+                <p>Pada file Buah.js</p><br>
+                <p>Dari kodingan diatas di layar akan muncul hasil :
+                    Buah apa yang kamu suka? Saya suka buah Apel
+                    Pada contoh diatas ada 2 component yang disediakan, yaitu component Tanaman, dan Buah. Tanaman
+                    sebagai parent, dan Buah sebagai childnya. Pertama, setelah memanggil component child “Buah” Kita
+                    bikin sebuah attribute didalamnya bernama “namaBuah” dan kemudian kita kasih nilai “Apel”
+                    <Buah namaBuah="Apel" />. Kemudian kita panggil attribute “namaBuah” di child component dengan
+                    menggunakana props, {props.namaBuah}, selesai, dan muncul hasilnya. Perlu diingat, jika kita memakai
+                    functional component, jangan lupa untuk memanggil props sebagai parameter sebelum arrow function.
+                    Jika ingin tau lebih jauh tentang props, bisa baca di dokumentasi resminya <a href="https://reactjs.org/docs/components-and-props.html">disini</a></p>
+            </article>
+        </main>
+        <footer>
+            <ul>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Terms of Use </a></li>
+                <li><a href="#">Privacy Policy</a></li>
+            </ul>
+            <p>Copyleft 2020 - I'm Death</p>
+        </footer>
+    </div>
+</body>
+
+</html>
