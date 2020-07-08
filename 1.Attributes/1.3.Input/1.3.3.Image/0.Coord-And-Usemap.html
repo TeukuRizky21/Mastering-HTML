@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coord and Usemap</title>
+</head>
+
+<body>
+    <p>Click on the sun or on one of the planets to watch it closer:</p>
+
+    <img src="planets.gif" alt="Planets" width="145" height="126" usemap="#planetmap">
+    <map name="planetmap">
+        <area shape="rect" coords="0,0,82,126" href="Sun" alt="sun.htm">
+        <area shape="circle" coords="90,58.3" href="Mercury" alt="mercur.htm">
+        <area shape="circle" coords="124,58,8" href="Venus" alt="venus.htm">
+    </map>
+</body>
+
+</html>

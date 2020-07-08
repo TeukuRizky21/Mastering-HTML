@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Data Attribute</title>
+    <script>
+        function showDetails(animal){
+            let animalType = animal.getAttribute('data-animal-type')
+            alert(`The ${animal.innerHTML} is a ${animalType}.`)
+        }
+    </script>
+</head>
+
+<body>
+    <h1>Species</h1>
+    <p>Click on a species to see what type it is:</p>
+
+    <ul>
+        <li onclick="showDetails(this)" id="owl" data-animal-type="bird">Owl</li>
+        <li onclick="showDetails(this)" id="salmon" data-animal-type="fist">Salmon</li>
+        <li onclick="showDetails(this)" id="tarantula" data-animal-type="spider">Tarantula</li>
+    </ul>
+</body>
+
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formaction</title>
+</head>
+
+<body>
+    <form action="/action_page.php" method="GET">
+        Firstname: <input type="text" name="fname"><br>
+        Lastname: <input type="text" name="lname"><br>
+        <button type="submit">Submit</button><br>
+        <button type="submit" formaction="/action_page2.php">Submit to another page</button>
+    </form>
+
+    <p><strong>Note:</strong> The formaction attribute of the button tag is not supported in Intertet Explorer 9 and
+        earlier versions.</p>
+</body>
+
+</html>
