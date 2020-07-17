@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Onchange Effect</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+
+<body>
+    Input ID:<input type="text" name="txt" id="test" value="">
+    <hr>
+    Balance ID: <input type="text" name="" id="balance" value="">
+    <hr><br>
+    <button>Show Result</button>
+    <button id="topup">Top Up</button>
+</body>
+<script>
+    $(document).ready(function () {
+        $('#topup').click(function() {
+            let idcard = $('#test').val()
+            alert(`ID ${idcard.toString()} Has been Recognized`)
+        })
+
+        $('#test').on('change', function(event){
+            let balance = $('#test').val()
+            alert('Result is: ' + balance)
+        })
+    })
+</script>
+
+</html>

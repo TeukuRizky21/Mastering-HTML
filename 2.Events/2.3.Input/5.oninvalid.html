@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oninvalid</title>
+</head>
+
+<body>
+
+    <form action="/action_page.php" method="GET">
+        Name: <input type="text" name="name" id="name" oninvalid="alert('You must fill out the form!')" required>
+        <input type="submit" value="Submit">
+    </form>
+
+    <p>If you click submit, without filling out the text field, an alert message will occur.</p>
+    <p><strong>Note:</strong> The oninvalid event is not supported in Internet Explorer 9 and earlier or Safari.</p>
+</body>
+
+</html>

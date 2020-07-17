@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Onscroll</title>
+    <style>
+        #myDIV {
+            border: 1px solid black;
+            width: 200px;
+            height: 100px;
+            overflow: scroll;
+        }
+    </style>
+</head>
+
+<body>
+    <p>Try the scrollbar in div.</p>
+
+    <div id="myDIV" onscroll="myFunction()">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eadem nunc mea adversum te oratio est. Si alia
+            sentit, inquam, alia loquitur, numquam intellegam quid sentiat; Cur tantas regiones barbarorum pedibus
+            obiit, tot maria transmisit? Dic in quovis conventu te omnia facere, ne doleas. Quae cum magnifice primo
+            dici viderentur, considerata minus probabantur. Erit enim mecum, si tecum erit. Duo Reges: constructio
+            interrete. Est autem etiam actio quaedam corporis, quae motus et status naturae congruentis tenet; Non
+            igitur potestis voluptate omnia dirigentes aut tueri aut retinere virtutem. Ego quoque, inquit, didicerim
+            libentius si quid attuleris, quam te reprehenderim.<br>
+
+        Nos vero, inquit ille; Videsne quam sit magna dissensio? Animum autem reliquis rebus ita perfecit, ut corpus;
+            Quarum ambarum rerum cum medicinam pollicetur, luxuriae licentiam pollicetur. Si quidem, inquit, tollerem,
+            sed relinquo. Quod autem principium officii quaerunt, melius quam Pyrrho; <mark>Quis istud possit, inquit,
+                negare?</mark> Animum autem reliquis rebus ita perfecit, ut corpus; Ea possunt paria non esse.<br>
+
+        Apud imperitos tum illa dicta sunt, aliquid etiam coronae datum; An ea, quae per vinitorem antea
+            consequebatur, per se ipsa curabit? Illa videamus, quae a te de amicitia dicta sunt. Sed in rebus
+            apertissimis nimium longi sumus. <a href="http://loripsum.net/" target="_blank">An haec ab eo non
+                dicuntur?</a> <a href="http://loripsum.net/" target="_blank">Collige omnia, quae soletis: Praesidium
+                amicorum.</a> Quo tandem modo? At modo dixeras nihil in istis rebus esse, quod interesset.
+</div>
+
+    <script>
+        function myFunction() {
+            document.getElementById('myDIV').style.color = 'red';
+        }
+    </script>
+
+    <p>A function is triggered when you scroll in div. The function sets the color of the text in div to red.</p>
+</body>
+
+</html>

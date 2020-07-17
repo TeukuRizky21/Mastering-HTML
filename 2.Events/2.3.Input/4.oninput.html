@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oninput</title>
+</head>
+
+<body>
+    <p>Write something in the text field to trigger a function.</p>
+    <input type="text" name="name" id="myInput" oninput="myFunction()">
+
+    <p id="demo"></p>
+
+    <script>
+        function myFunction(){
+            let x = document.getElementById('myInput').value
+            document.getElementById('demo').innerHTML = 'You wrote: ' + x
+        }
+    </script>
+</body>
+
+</html>
