@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OnMouseDown</title>
+</head>
+
+<body>
+    <p id="p1" onmousedown="mouseDown()" onmouseup="mouseUp()">
+        Click the text! The mouseDown() function is triggered
+        when the mouse button is pressed down over this paragraph. The function sets the color of the text to red. The
+        mouseUp() function is triggered when the mouse button is released. The mouseUp() function
+        sets the color of the text to green.</p>
+
+    <script>
+        function mouseDown() {
+            document.getElementById('p1').style.color = 'red'
+        }
+
+        function mouseUp() {
+            document.getElementById('p1').style.color = 'green'
+        }
+    </script>
+</body>
+
+</html>
