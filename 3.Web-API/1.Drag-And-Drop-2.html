@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drag and Drop 2</title>
+    <style>
+        #div1,
+        #div2 {
+            float: left;
+            width: 100px;
+            height: 35px;
+            margin: 10px;
+            padding: 10px;
+            border: 1px solid #aaaaaa;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Drag and Drop</h2>
+    <p>Drag the image back and forth between the two div elements.</p>
+
+    <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+        <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2F1.bp.blogspot.com%2F-r2N7M2kLUd4%2FU7Rf2_K8OoI%2FAAAAAAAABT8%2Fu5UvLtBe3uk%2Fs1600%2Fw3schools.com_02.png&f=1&nofb=1"
+            alt="W3Schools" draggable="true" ondragstart="drag(event)" width="88" height="31" id="drag1">
+    </div>
+
+    <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    <br>
+
+    <script>
+        function allowDrop(event) {
+            event.preventDefault()
+        }
+
+        function drag(event) {
+            event.dataTransfer.setData('text', event.target.id)
+        }
+
+        function drop(event) {
+            event.preventDefault()
+            let data = event.dataTransfer.getData('text')
+            event.target.appendChild(document.getElementById(data))
+        }
+    </script>
+</body>
+
+</html>
