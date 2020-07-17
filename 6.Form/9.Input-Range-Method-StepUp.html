@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Range Method StepUp</title>
+</head>
+
+<body>
+    Points: <input type="range" id="myRange" value="60">
+
+    <p>Click the button to increment the value of the slider control by "10" (each time you click).</p>
+
+    <button onclick="myFunction()">Try it</button>
+
+    <script>
+        function myFunction() {
+            document.getElementById("myRange").stepUp(10);
+        }
+    </script>
+</body>
+
+</html>
